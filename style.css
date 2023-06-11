@@ -1,0 +1,152 @@
+.icon-outlined {
+  position: relative;
+  display: inline-block;
+}
+
+.redesSociais li{
+  margin-left: 20px;
+}
+
+.dropdown-menu {
+  text-align: left;
+  width: 100%;
+  background-color: white;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.icon-outlined:hover .dropdown-menu {
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu li{
+  padding: 10px 0;
+  color: black;
+  width: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+.listaLinks li a:hover{
+  color: #20A33B;
+}
+
+.listaLinks li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0 15px;
+}
+
+ul li{
+  display: inline-block;
+  color: lightgray;
+}
+
+ul li h1{
+    color: white;
+    font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.icon-outlined{
+  position: relative;
+}
+
+.material-symbols-outlined {
+  font-size: 18px !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.imagens{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagem{
+  width: 31%;
+  position: relative;
+  filter: saturate(0);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.imagem img{
+  filter: brightness(100%);
+  transition: 0.3s;
+}
+
+.imagem img:hover{
+  transform: scale(1.02);
+  filter: brightness(60%);
+}
+
+.imagem:hover{
+  filter: saturate(1);
+  transform-origin: center;
+}
+
+.textoImagem button:hover{
+  background-color: white;
+  color: black;
+}
+
+.textoImagem{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textoImagem span{
+  font-size: 2em;
+}
+
+.textoImagem button{
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin-top: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px 22px;
+}
+
+.imagem img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+  .imagens{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagem{
+    width: 98%;
+  }
+}

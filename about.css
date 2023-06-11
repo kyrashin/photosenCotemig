@@ -1,0 +1,72 @@
+.titulo{
+    width: 100%;
+    text-align: center;
+}
+
+.titulo h1{
+    font-size: 5em;
+}
+
+
+section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.textoAbout{
+    text-align: left;
+    padding-left: 18%;
+}
+.imagemAbout{
+    filter: saturate(0);
+    transition: transform 0.3s;
+    transition: 0.3s;
+}
+
+.imagemAbout:hover{
+    transform: scale(1.02);
+    filter: brightness(100%);
+  }
+
+.textoAbout h4{
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.textoAbout p{
+    color: #777777;
+}
+
+.pessoas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.cardPessoa{
+    width: 31%;
+}
+
+.cardPessoa img{
+    margin-top: 100px;
+    border-radius: 100%;
+    width: 50%;
+}
+
+.cardPessoa img{
+    filter: saturate(0);
+    transition: transform 0.3s;
+    transition: 0.3s;
+}
+
+.cardPessoa img:hover{
+    transform: scale(1.02);
+    filter: brightness(100%);
+}
+
+.redesSociais li{
+    margin: 0 10px;
+}

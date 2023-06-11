@@ -1,0 +1,55 @@
+.titulo{
+    width: 100%;
+    text-align: center;
+}
+
+.titulo h1{
+    font-size: 5em;
+}
+
+.containerCartoesServices{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.cardServices{
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    width: 31%;
+    height: 350px;
+    padding: 0 20px;
+}
+
+.cardServices svg:hover{
+    height: 6em;
+}
+
+.priceCardService{
+    color: #20C997;
+    font-weight: bold
+}
+
+.descriptionCardService{
+    color: #777777;
+}
+
+.titleCardService{
+    font-size: 1.5em;
+}
+
+@media (max-width: 900px) {
+    .containerCartoesServices{
+        flex-direction: column;
+    }
+
+    .cardServices{
+        width: 98%;
+    }
+  }
